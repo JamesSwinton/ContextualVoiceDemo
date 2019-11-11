@@ -1,0 +1,42 @@
+<resources>
+  <string name="app_name">Contextual Voice Demo</string>
+
+  <!-- Canned Responses -->
+  <string-array name="hello_responses">
+    <item>Hey there!</item>
+    <item>Howdy!</item>
+    <item>Hey!</item>
+    <item>Hello!</item>
+  </string-array>
+
+  <string-array name="beans_responses">
+    <item>The beans are on aisle 14, next to the condiments</item>
+    <item>The beans are on aisle 14. You can find them next to the condiments.</item>
+    <item>The beans are on aisle 14.</item>
+  </string-array>
+
+  <string-array name="jam_responses">
+    <item>The jam can be found on aisle 8, near the bakery</item>
+    <item>The jam is on aisle 8</item>
+    <item>The jam is on aisle 8 - may we recommend Zebra Brand Jam?</item>
+  </string-array>
+
+  <string-array name="bread_responses">
+    <item>We have a wide selection of bread on aisle 3</item>
+    <item>The bread is on aisle 3</item>
+    <item>The bread can be found on aisle 3, but we also have freshly baked loafs at our bakery near aisle 8</item>
+  </string-array>
+
+  <string-array name="beer_responses">
+    <item>Beer can be found on aisle 21</item>
+    <item>The beer is on aisle 21, why not try out some of our newly stocked craft beer?</item>
+    <item>The beer is located on aisle 21, towards the back of the store</item>
+  </string-array>
+
+  <string-array name="toiletries_responses">
+    <item>The toiletries are on aisle 18</item>
+    <item>The toiletries are on aisle 18. We currently have an offer on our shampoo!</item>
+    <item>Toiletries can be found on aisle 18</item>
+  </string-array>
+
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!-- App Colours -->
+  <color name="colorPrimary">#007CB0</color>
+  <color name="colorPrimaryDark">#00658f</color>
+  <color name="colorAccent">#D81B60</color>
+
+  <!-- Zebra Colours -->
+  <color name="zebraBlue">#007CB0</color>
+  <color name="zebraYellow">#FFD200</color>
+  <color name="zebraRed">#ED1C24</color>
+  <color name="zebraGreen">#2e7d32</color>
+
+  <!-- Generics -->
+  <color name="white">#FFF</color>
+</resources>

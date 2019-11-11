@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  tools:context=".MainActivity">
+
+  <LinearLayout
+    android:id="@+id/base_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+      android:id="@+id/toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+      android:background="@color/colorPrimary"
+      app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+      app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+      app:title="@string/app_name"
+      app:titleTextColor="#FFF"></androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:weightSum="10">
+
+      <!-- Chat Box View -->
+      <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chat_box_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:background="#F5F5F5"
+        android:padding="12dp" />
+
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#9E9E9E" />
+
+      <!-- Text / Voice Input Layout -->
+      <LinearLayout
+        android:id="@+id/request_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/request_edittext_layout"
+          style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="8.5"
+          android:hint="How can I help..."
+          tools:ignore="HardcodedText,NestedWeights">
+
+          <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/request_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionSend"
+            android:inputType="text"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+          android:id="@+id/request_voice_button"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1.5"
+          android:contentDescription="Microphone Icon"
+          android:padding="12dp"
+          android:src="@drawable/ic_microphone"
+          tools:ignore="HardcodedText" />
+
+      </LinearLayout>
+
+    </LinearLayout>
+
+  </LinearLayout>
+
+</layout>
